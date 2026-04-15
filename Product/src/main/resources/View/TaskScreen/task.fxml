@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minWidth="600.0" prefHeight="90.0" prefWidth="860.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="protasker.Controller.TaskController">
+   <children>
+      <HBox prefHeight="76.0" prefWidth="389.0">
+         <children>
+            <VBox prefHeight="55.0" prefWidth="725.0">
+               <HBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </HBox.margin>
+               <children>
+                  <Label fx:id="taskName" prefHeight="28.0" prefWidth="345.0" text="Task's Name">
+                     <font>
+                        <Font name="Plus Jakarta Sans ExtraBold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="taskDecrip" text="Task's Decription">
+                     <font>
+                        <Font name="Plus Jakarta Sans Light" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="3.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fx:id="userAvaPath" fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../DashBoard/Image/avatar.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT">
+         <children>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../DashBoard/Image/clone%20(2).png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </ImageView>
+            <ComboBox fx:id="taskStatus" prefHeight="29.0" prefWidth="224.0" promptText="Task's Status" style="-fx-cursor: hand;" stylesheets="@../ComboBoxCustom.css">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="In Progress" />
+                     <String fx:value="Done" />
+                     <String fx:value="Cancel" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../DashBoard/Image/user.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="taskAssigneeName" prefHeight="29.0" prefWidth="120.0" text="Assignee">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Plus Jakarta Sans Medium" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../DashBoard/Image/cube.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label fx:id="taskProjectNameOwn" prefHeight="29.0" prefWidth="237.0" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-background-radius: 5;" text="Project's Name">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Plus Jakarta Sans Medium" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
