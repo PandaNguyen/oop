@@ -1,7 +1,6 @@
 
 # [PROTASKER]
 
-**ProTasker** is an application that allows users to create projects and create and manage their tasks. The project was done by **Đỗ Vũ Hải Đăng**, in the course of **Object Oriented Programming** at **ProPTIT**.
 
 
 ## Authors
