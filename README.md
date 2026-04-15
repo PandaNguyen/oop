@@ -3,22 +3,6 @@
 
 
 
-## Authors
-
-- [@DarkJyn](https://github.com/DarkJyn)
-
-## Installation
-
-Cách cài đặt dự án
-
-```bash
-  - Clone the repo
-  - Run AppLaucher.bat
-```
-
-## Demo
-
-Link Video Demo Youtube : https://youtu.be/DziJp_qkL20?si=hyOgO_aOYZT9HCVw
 
 
 ## Screenshots
